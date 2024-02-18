@@ -18,12 +18,12 @@ function onMoveDivResult(event) {
     const targetWord = transcript.split(" ")[0];
     const targetDiv = document.getElementsByClassName("target-div")[0];
 
-    
+
     const moveDict = {
-        right: 10,
-        left: -10,
-        top: -10,
-        down: 10,
+        right: 100,
+        left: -100,
+        top: -100,
+        down: 100,
     };
     debugger;
     if (targetWord === "right" || targetWord === "left") {
