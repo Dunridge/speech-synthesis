@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speech Synthesis</title>
+    <style>
+        .target-div {
+            position: relative;
+            left: 100px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">Speech Synthesis</div>
     <div class="body">
-        <button class="body__allow" onclick="onClick()">Control Background</button>
-        <!-- <button onclick="stopRecognition()">Stop</button> -->
+        <button class="body__allow" onclick="onControlBGClick()">Control Background</button>
     </div>
+    <hr>
+    <div>
+        <div class="target-div">Target DIV</div>
+        <button onclick="onMoveDivClick()">Move</button>
+
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
